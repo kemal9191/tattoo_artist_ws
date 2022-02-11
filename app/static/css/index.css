@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after{
+    font-family: 'Andada Pro', serif;
+    font-size: 1rem;
+}
+
+body{
+    background-image: url("/static/images/layout.jpg");
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: flex-end;
+    width:100%;
+}
+
+.nav-link{
+    transition: opacity 0.2s ease-in-out;
+}
+
+.nav-link:hover{
+    opacity: 0.2;
+}
+.border{
+border-radius: 10px;
+padding: 1rem 5rem;
+}
+
+.book-button-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-button-container a{
+    text-decoration: none;
+
+}
