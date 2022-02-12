@@ -1,6 +1,14 @@
 {% extends 'layout.html' %}
 
 {% block container %}
+<div class="container-fluid d-flex flex-wrap justify-content-between  pt-5">
+{% for tattoo in tattoos %}
+    <div class="img-container col-xl-4 my-4">
+        <img src="{{tattoo.url}}" alt="" class="responsive img-thumbnail">
+    </div>
+{% endfor %}
+</div>
 
+   
 
 {% endblock %}

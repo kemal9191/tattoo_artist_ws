@@ -1,4 +1,4 @@
-from flask import Blueprint, url_for, render_template, request, redirect
+from flask import Blueprint, url_for, render_template, request, redirect, flash
 from app.models import Tattoo
 
 main = Blueprint("main", __name__)
@@ -6,7 +6,7 @@ main = Blueprint("main", __name__)
 @main.route('/')
 @main.route('/home')
 def home():
-    return render_template("layout.html", title="Home")
+    return render_template("home.html", title="Home")
 
 
 @main.route('/about-us')
@@ -16,7 +16,8 @@ def about():
 
 @main.route('/gallery')
 def gallery():
-    return render_template('gallery.html', title="Gallery")
+    tattoos = Tattoo.query.all()
+    return render_template('gallery.html', title="Gallery", tattoos=tattoos)
 
 
 @main.route('/contact-us')
