@@ -23,3 +23,5 @@ def gallery():
 @main.route('/contact-us')
 def contact():
     return render_template('contact.html', title="Contact Us")
+
+
