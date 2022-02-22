@@ -1,12 +1,31 @@
 {% extends 'layout.html' %}
 
 {% block container %}
-<div class="container-fluid d-flex flex-wrap justify-content-between  pt-5">
-{% for tattoo in tattoos %}
-    <div class="img-container col-xl-4 my-4">
-        <img src="{{tattoo.url}}" alt="" class="responsive img-thumbnail">
-    </div>
-{% endfor %}
+<div class="container-fluid d-flex flex-wrap justify-content-start  pt-5">
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_1.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_2.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_3.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_4.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_5.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_6.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_7.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
+<div class="img-container col-xl-4 my-4">
+    <img src="{{url_for('static', filename='images/gallery_8.jpg')}}" alt="" class="responsive img-thumbnail">
+</div>
 </div>
 
    

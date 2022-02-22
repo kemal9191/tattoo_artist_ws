@@ -25,18 +25,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarToggle">                   
                     <div class="navbar-nav mr-auto navbar-right">
-                        {% if title != "Home" %}
-                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('main.home') }}">Home</a>
-                        {% endif %}
-                        {% if title != "About Us" %}
-                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('main.about') }}">About Us</a>
-                        {% endif %}
-                        {% if title != "Gallery" %}
-                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('main.gallery') }}">Gallery</a>
-                        {% endif %}
-                        {% if title != "Contact Us" %}
-                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('main.contact') }}">Contact Us</a>
-                        {% endif %}
+                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('admins.create_post') }}">Post</a>
+                        <a class="nav-item nav-link font-weight-bold text-white ml-2" href="{{ url_for('admins.create_tattoo') }}">Tattoo</a>
                     </div>
                 </div>
             </div>
