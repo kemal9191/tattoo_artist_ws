@@ -3,8 +3,6 @@
 {% block container %}
 <div class="home-background"></div>
 <div class="book-button-container">
-    <button class="bg-dark border border-0">
-        <a href="{{ url_for('main.contact') }}" class="text-white font-weight-bold">Book Now</a>
-    </button>
+        <a href="{{ url_for('main.contact') }}" class="text-white font-weight-bold btn btn-dark p-3 px-5 mb-5" style="position: fixed; top:50%">Book Now</a>
 </div>  
 {% endblock %}

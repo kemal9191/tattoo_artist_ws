@@ -15,4 +15,4 @@ class PostForm(FlaskForm):
 class TattooForm(FlaskForm):
     name = StringField('Name', validators=[InputRequired()])
     image = FileField('Upload a tattoo picture', validators=[FileAllowed(['jpg', 'png'])])
-    submit = SubmitField('Update')
+    submit = SubmitField('Upload')

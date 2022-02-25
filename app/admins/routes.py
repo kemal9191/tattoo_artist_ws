@@ -34,5 +34,6 @@ def create_tattoo():
             tattoo = Tattoo(name=form.name.data, image=image_file)
             db.session.add(tattoo)
             db.session.commit()
-        return "hehehehehe"
+            flash("Tattoo has been successfully uploaded", "success")
+        return redirect(url_for("admins.create_tattoo"))
     return render_template("create_tattoo.html", form=form)

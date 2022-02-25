@@ -1,6 +1,6 @@
-from unicodedata import name
+from datetime import datetime
 from app import db
-from sqlalchemy import ForeignKey
+from sqlalchemy import ForeignKey, DateTime
 
 class Tattoo(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -29,3 +29,10 @@ class Admin(db.Model):
 
     def __repr__(self):
         return f"Tattoo {self.name} has been uploaded"
+
+
+class FormRequests(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    title = db.Column(db.String(), nullable=False)
+    content = db.Column(db.String(), nullable=False)
+    date = db.Column(db.DateTime(), default=datetime.utcnow)
